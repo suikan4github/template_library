@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 -  [Issue #2](https://github.com/suikan4github/template_library/issues/2) : Need detail report of ctest in case of test failed.
+- [Issue #4](https://github.com/suikan4github/template_library/issues/4) :  Add develop branch to the Action trigger "pull_request" 
+
 ## [1.0.0] - 2021-12-11
 ### Added
 - Initial release of project
