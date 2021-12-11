@@ -8,7 +8,7 @@ set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 # Parameters inside project
 include("src/parameters.cmake")
-project("${MY_LIBRARY_NAME}_dev")
+project("dev_${MY_LIBRARY_NAME}")
 
 #----------------------------------------------------------------------------
 # Parameters inside project

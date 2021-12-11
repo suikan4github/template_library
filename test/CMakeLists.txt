@@ -1,8 +1,11 @@
 #----------------------------------------------------------------------------
 # Do not edit lines below
 
+# Get the MY_LIBRARY_NAME from the library source directory.
+include("${CMAKE_CURRENT_SOURCE_DIR}/../src/parameters.cmake")
+
 # Test executable and library name
-set(TEST_EXECUTABLE_NAME test_${PROJECT_NAME})
+set(TEST_EXECUTABLE_NAME test_${MY_LIBRARY_NAME})
 
 # List all source file in this directory
 file(GLOB TEST_SRC "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
@@ -13,12 +16,12 @@ add_executable(${TEST_EXECUTABLE_NAME} ${TEST_SRC})
 # Add the library under test.
 target_link_libraries(${TEST_EXECUTABLE_NAME}  
                         "gtest_main"
-                        ${TEST_LIBRARY_NAME}
+                        ${MY_LIBRARY_NAME}
                          )
 # Add the include directory for test executable.
 target_include_directories(${TEST_EXECUTABLE_NAME}
                             PUBLIC
-                            "${PROJECT_SOURCE_DIR}/src"
+                            "${CMAKE_CURRENT_SOURCE_DIR}/../src"
                             )
 
 # Find and integrate the Google Test package
