@@ -1,6 +1,9 @@
 #----------------------------------------------------------------------------
 # Do not edit lines below
 
+# Test executable and library name
+set(TEST_EXECUTABLE_NAME test_${PROJECT_NAME})
+
 # List all source file in this directory
 file(GLOB TEST_SRC "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
 
@@ -12,7 +15,6 @@ target_link_libraries(${TEST_EXECUTABLE_NAME}
                         "gtest_main"
                         ${TEST_LIBRARY_NAME}
                          )
-
 # Add the include directory for test executable.
 target_include_directories(${TEST_EXECUTABLE_NAME}
                             PUBLIC

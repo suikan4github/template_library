@@ -6,10 +6,12 @@ cmake_policy(SET CMP0091 "NEW")
 # Enforce the  /MT or /MTd as link option for MS Visual Studio C++
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
+# Parameters inside project
+include("src/parameters.cmake")
+project("${MY_LIBRARY_NAME}_dev")
 
 #----------------------------------------------------------------------------
 # Parameters inside project
-project("template_application")
 
 # Compiler option
 # GoogleTest requirest C++11 or later
@@ -20,13 +22,6 @@ set(CMAKE_CXX_EXTENSIONS "OFF")
 
 #----------------------------------------------------------------------------
 # Do not edit the lines below 
-
-# Executable name
-set(EXECUTABLE_NAME ${PROJECT_NAME})
-
-# Test executable and library name
-set(TEST_EXECUTABLE_NAME "test_${PROJECT_NAME}")
-set(TEST_LIBRARY_NAME "${PROJECT_NAME}_for_test")
 
 # Enable CTest
 # This command automatically run the enable_test() command.

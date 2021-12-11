@@ -5,10 +5,20 @@ set(MAIN_FILE_PATTERN ".*/main.cpp$")
 #----------------------------------------------------------------------------
 # Do not edit the lines below 
 
+# Project Parameters.
+# Library name
+include("parameters.cmake")
+set(TEST_LIBRARY_NAME ${MY_LIBRARY_NAME} PARENT_SCOPE)
+
+# Executable name
+set(EXECUTABLE_NAME ${PROJECT_NAME})
+
 # List up all source files including main.cpp
 file(GLOB ALL_SRCS "*.cpp")
 
-add_executable(${EXECUTABLE_NAME} ${ALL_SRCS})
+# Executable if needed
+add_executable(${EXECUTABLE_NAME} 
+    ${ALL_SRCS})
 
 # Add pthread library to support std::thread
 # In the case of MSVC, this is not required.
@@ -22,5 +32,7 @@ set( LIB_SRCS ${ALL_SRCS})                                  # create a new list 
 list(FILTER LIB_SRCS EXCLUDE REGEX ${MAIN_FILE_PATTERN})    # Filter out the main file
 
 # Library for testing ( without main file)
-add_library(${TEST_LIBRARY_NAME} STATIC
+add_library(${MY_LIBRARY_NAME} STATIC
     ${LIB_SRCS})
+
+
