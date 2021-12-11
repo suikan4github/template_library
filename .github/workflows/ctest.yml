@@ -36,9 +36,9 @@ jobs:
           echo "#                         Debug build                                 #"
           echo "#######################################################################"
           cmake --build . --config Debug
-          ctest --rerun-failed --output-on-failure
+          ctest --rerun-failed --output-on-failure -j 4
           echo "#######################################################################"
           echo "#                         Release build                               #"
           echo "#######################################################################"
           cmake --build . --config Release
-          ctest --rerun-failed --output-on-failure
+          ctest --rerun-failed --output-on-failure -j 4
