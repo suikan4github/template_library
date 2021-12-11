@@ -39,4 +39,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a test
-        run: cd build; ctest
+        run: cd build; ctest --rerun-failed --output-on-failure
