@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 ### Changed
 ### Fixed
-
+-  [Issue #2](https://github.com/suikan4github/template_library/issues/2) : Need detail report of ctest in case of test failed.
 ## [1.0.0] - 2021-12-11
 ### Added
 - Initial release of project
