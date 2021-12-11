@@ -2,15 +2,15 @@
 A template library for C++ with CMake and GoogleTest
 
 ## Description
-A CMake file template and sample C++ application which allows unit test by GoogleTest. This template Library is :
+A CMake file template and sample C++ library which allows unit test by GoogleTest. This template Library is :
 - Able to collaborate with [Visual Studio CODE](https://azure.microsoft.com/ja-jp/products/visual-studio-code/) editor.
-- Build in [Google Test](https://github.com/google/googletest) which is downloaded automatically.
+- Build in [GoogleTest](https://github.com/google/googletest) which is downloaded automatically.
 - "src" directory for application source code.
 - "test" directory for unit tests. 
 - std::thread aware. 
-- Tested on Ubuntu 20.04  with GCC.
-- Tested on Windows 11 with Visual Studio C++ compiler.
-- Tested on WSL2 with VS CODE remote server.
+- Tested with Ubuntu 20.04  with GCC.
+- Tested with Windows 11 with Visual Studio C++ compiler.
+- Tested with WSL2 with VS CODE remote server.
 
 ## Requirement
 ### Ubuntu
@@ -36,7 +36,7 @@ A CMake file template and sample C++ application which allows unit test by Googl
 ## Usage
  Follow the [Usage section of the Template Application](https://github.com/suikan4github/template_application#usage) to build.
 
-When other application uses this library, it can include the source directory only. For example, let's assume we have application "foo" has the template_library directory in its src directory.  
+When other application uses this library, it can add the source directory only. For example, let's assume we have application "foo" which has the template_library directory in its src directory.  
 ```
 foo
 ├── CMakeLists.txt
@@ -56,7 +56,7 @@ In this case, foo/CMakeLists.txt must has following command :
 ```
 add_subdirectory("src/template_library/src")
 ```
-The src/template_library should not be added as subdirectory. Otherwise, the setting of the project parameter may cause conflict. 
+The src/template_library should not be added as subdirectory. Otherwise, the settings of the project parameters may cause conflict. 
 
 ## Install
  Follow the [Install section of the Template Application](https://github.com/suikan4github/template_application#install).
