@@ -28,8 +28,21 @@ jobs:
       # Runs commands using the runners shell
       - name: Configure, build and test
         run: |
+          echo "Configure, build and test"
           mkdir build
           cd build 
           cmake .. 
+          cat <<EOD
+#######################################################################
+#                         Debug build                                 #
+#######################################################################
+EOD
           cmake --build . --config Debug
+          ctest --rerun-failed --output-on-failure
+          cat <<EOD
+#######################################################################
+#                         Release build                               #
+#######################################################################
+EOD
+          cmake --build . --config Release
           ctest --rerun-failed --output-on-failure
