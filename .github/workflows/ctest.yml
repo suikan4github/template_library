@@ -31,14 +31,15 @@ jobs:
           echo "Configure, build and test"
           mkdir build
           cd build 
-          cmake .. 
           echo "#######################################################################"
           echo "#                         Debug build                                 #"
           echo "#######################################################################"
-          cmake --build . --config Debug
+          cmake .. -DCMAKE_BUILD_TYPE:STRING=Debug
+          cmake --build . --target all --config Debug --clean-first -j4
           ctest --rerun-failed --output-on-failure -j 4
           echo "#######################################################################"
           echo "#                         Release build                               #"
           echo "#######################################################################"
-          cmake --build . --config Release
+          cmake .. -DCMAKE_BUILD_TYPE:STRING=Release
+          cmake --build . --target all --config Release --clean-first -j4
           ctest --rerun-failed --output-on-failure -j 4
