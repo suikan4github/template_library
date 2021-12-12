@@ -3,7 +3,7 @@
 #include "calc.hpp"
 #include <stdexcept>
 
-TEST(Calc, Death)
+TEST(CalcDeathTest, SqrtWithMinusParam)
 {
     Calc calc;
 #ifndef NDEBUG
