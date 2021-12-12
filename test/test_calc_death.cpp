@@ -3,6 +3,8 @@
 #include "calc.hpp"
 #include <stdexcept>
 
+// The name of the death test CASE have to  be .*DeathTest
+// Read GoogleTest document https://github.com/google/googletest/blob/main/docs/advanced.md#death-test-naming
 TEST(CalcDeathTest, SqrtWithMinusParam)
 {
     Calc calc;
