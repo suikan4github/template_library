@@ -6,12 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- [Issue #5](https://github.com/suikan4github/template_library/issues/5) : Add Release build to test of the GitHub Actions 
 ### Changed
+- [Issue #6](https://github.com/suikan4github/template_library/issues/6) : Change name of Death test name. #6 
 ### Fixed
--  [Issue #2](https://github.com/suikan4github/template_library/issues/2) : Need detail report of ctest in case of test failed.
-- [Issue #4](https://github.com/suikan4github/template_library/issues/4) :  Add develop branch to the Action trigger "pull_request" 
+- [Issue #2](https://github.com/suikan4github/template_library/issues/2) : Need detail report of ctest in case of test failed.
 - [Issue #3](https://github.com/suikan4github/template_library/issues/3):  Guard death test by conditional compile. 
-
+- [Issue #4](https://github.com/suikan4github/template_library/issues/4) :  Add develop branch to the Action trigger "pull_request" 
+- [Issue #7](https://github.com/suikan4github/template_library/issues/7) : Release test in GitHub Actions is not working good 
 ## [1.0.0] - 2021-12-11
 ### Added
 - Initial release of project
