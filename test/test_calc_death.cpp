@@ -3,9 +3,11 @@
 #include "calc.hpp"
 #include <stdexcept>
 
-TEST(Calc, Death)
+TEST(CalcDeathTest, SqrtWithMinusParam)
 {
     Calc calc;
-
+#ifndef NDEBUG
+    // We test only when assert() works.
     ASSERT_DEATH(calc.sqrt(-1), "param >= 0");
+#endif
 }
