@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [Unreleased] - YYYY-MM-DD
+### Added
+### Changed
+### Fixed
+
+## [1.0.1] - 2021-12-12
 ### Added
 - [Issue #5](https://github.com/suikan4github/template_library/issues/5) : Add Release build to test of the GitHub Actions 
 ### Changed
@@ -14,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - [Issue #3](https://github.com/suikan4github/template_library/issues/3):  Guard death test by conditional compile. 
 - [Issue #4](https://github.com/suikan4github/template_library/issues/4) :  Add develop branch to the Action trigger "pull_request" 
 - [Issue #7](https://github.com/suikan4github/template_library/issues/7) : Release test in GitHub Actions is not working good 
+
 ## [1.0.0] - 2021-12-11
 ### Added
 - Initial release of project
@@ -21,5 +27,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.0.0...develop
+[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.0.1...develop
+[1.0.1]: https://github.com/suikan4github/template_library/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/suikan4github/template_library/compare/v0.0.0...v1.0.0
