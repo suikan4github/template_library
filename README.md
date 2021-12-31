@@ -7,6 +7,7 @@ A CMake file template and sample C++ library which allows unit test by GoogleTes
 - Build in [GoogleTest](https://github.com/google/googletest) which is downloaded automatically.
 - "src" directory for application source code.
 - "test" directory for unit tests. 
+- Gcov data generation during the test program execution (GCC/LLVM only). 
 - std::thread aware. 
 - Tested with Ubuntu 20.04  with GCC.
 - Tested with Windows 11 with Visual Studio C++ compiler.
