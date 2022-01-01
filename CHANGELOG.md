@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased] - YYYY-MM-DD
 ### Added
 - [Issue #10](https://github.com/suikan4github/template_library/issues/10) : Add gcov support 
+- [Issue #11](https://github.com/suikan4github/template_library/issues/11) : Add Windows run on test 
 ### Changed
 ### Fixed
 
