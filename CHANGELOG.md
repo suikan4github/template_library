@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MM-DD
 ### Added
+### Changed
+### Fixed
+
+## [1.1.0] - 2022-01-02
+### Added
 - [Issue #10](https://github.com/suikan4github/template_library/issues/10) : Add gcov support 
 - [Issue #11](https://github.com/suikan4github/template_library/issues/11) : Add Windows run on test 
 ### Changed
@@ -29,6 +34,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.0.1...develop
+[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.1.0...develop
+[1.0.1]: https://github.com/suikan4github/template_library/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/suikan4github/template_library/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/suikan4github/template_library/compare/v0.0.0...v1.0.0
