@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MM-DD
 ### Added
+- [Issue #12](https://github.com/suikan4github/template_library/issues/12) : Add gcovr support 
 ### Changed
 ### Fixed
 

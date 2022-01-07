@@ -14,7 +14,7 @@ A CMake file template and sample C++ library which allows unit test by GoogleTes
     - Windows 11 with Visual Studio C++ compiler.
     - WSL2 with VS CODE remote server.
 - Automatically tested by GitHub Actions.
-    - linux-latest, Debug
+    - linux-latest, Debug ( With gcovr report )
     - linux-latest, Release
     - windows-latest, Debug
     - windows-latest, Release

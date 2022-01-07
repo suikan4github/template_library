@@ -37,17 +37,16 @@ jobs:
           cd build
           cmake .. -DCMAKE_BUILD_TYPE:STRING=${{ matrix.build }}
 
-      # Runs only when Linux
+      # Build for Linux
       - name: Build for Linux
-        if: ${{ matrix.os == 'ubuntu-latest' }}
+        if:  matrix.os == 'ubuntu-latest'
         run: |
           cd build
           cmake --build . --target all --config ${{ matrix.build }} --clean-first -j4
 
-
-      # Runs only when Windows
+      # Build for Windows
       - name: Build for Windows
-        if: ${{ matrix.os == 'windows-latest' }}
+        if:  matrix.os == 'windows-latest' 
         run: |
           cd build
           cmake --build . --target all_build --config ${{ matrix.build }} --clean-first -j4
@@ -56,5 +55,12 @@ jobs:
         run:  |
           cd build
           ctest --rerun-failed --output-on-failure -j 4
+
+      # Created report only when Linux and Debug
+      - name: Gcovr ( Linux and Debug only )
+        if:  matrix.os == 'ubuntu-latest'  && matrix.build == 'Debug' 
+        run:  |
+          sudo apt-get install gcovr -y > /dev/null
+          gcovr -r . -e build
 
 
