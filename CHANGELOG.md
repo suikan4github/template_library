@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 
+## [1.2.0] - 2022-01-10
+### Added
+- [Issue #12](https://github.com/suikan4github/template_library/issues/12) : Add gcovr support 
+### Changed
+- [Issue #13](https://github.com/suikan4github/template_library/issues/13) : Display alll warning during build
+### Fixed
+
+## [1.1.0] - 2022-01-02
+### Added
+- [Issue #10](https://github.com/suikan4github/template_library/issues/10) : Add gcov support 
+- [Issue #11](https://github.com/suikan4github/template_library/issues/11) : Add Windows run on test 
+### Changed
+### Fixed
+
 ## [1.0.1] - 2021-12-12
 ### Added
 - [Issue #5](https://github.com/suikan4github/template_library/issues/5) : Add Release build to test of the GitHub Actions 
@@ -27,6 +41,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.0.1...develop
+[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.2.0...develop
+[1.2.0]: https://github.com/suikan4github/template_library/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/suikan4github/template_library/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/suikan4github/template_library/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/suikan4github/template_library/compare/v0.0.0...v1.0.0
