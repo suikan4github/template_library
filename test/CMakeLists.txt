@@ -22,15 +22,20 @@ set(TEST_EXECUTABLE_NAME test_${MY_LIBRARY_NAME})
 # Add the executable for the testcase which is using googletest
 add_executable(${TEST_EXECUTABLE_NAME} ${TEST_SRC} ${LIB_SRC})
 
-# Add the library under test.
-target_link_libraries(${TEST_EXECUTABLE_NAME}  
-                        "gtest_main"
-                         )
-# Add the include directory for test executable.
-target_include_directories(${TEST_EXECUTABLE_NAME}
-                            PUBLIC
-                            "${CMAKE_CURRENT_SOURCE_DIR}/../src"
+    # Add the library under test.
+    target_link_libraries(${TEST_EXECUTABLE_NAME}  
+                            "gtest_main"
                             )
+    # Add the include directory for test executable.
+    target_include_directories(${TEST_EXECUTABLE_NAME}
+                                PUBLIC
+                                "${CMAKE_CURRENT_SOURCE_DIR}/../src"
+                                )
+    if(MSVC)
+        target_compile_options(${TEST_EXECUTABLE_NAME} PRIVATE /W4 )
+    else()
+        target_compile_options(${TEST_EXECUTABLE_NAME} PRIVATE -Wall -Wextra -pedantic )
+    endif()
 
 # Find and integrate the Google Test package
 

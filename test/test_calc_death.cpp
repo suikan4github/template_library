@@ -7,8 +7,8 @@
 // Read GoogleTest document https://github.com/google/googletest/blob/main/docs/advanced.md#death-test-naming
 TEST(CalcDeathTest, SqrtWithMinusParam)
 {
-    Calc calc;
 #ifndef NDEBUG
+    Calc calc;
     // We test only when assert() works.
     ASSERT_DEATH(calc.sqrt(-1), "param >= 0");
 #endif
