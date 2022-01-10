@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MM-DD
 ### Added
+### Changed
+### Fixed
+
+## [1.2.0] - 2022-01-10
+### Added
 - [Issue #12](https://github.com/suikan4github/template_library/issues/12) : Add gcovr support 
 ### Changed
 - [Issue #13](https://github.com/suikan4github/template_library/issues/13) : Display alll warning during build
@@ -36,7 +41,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.1.0...develop
-[1.0.1]: https://github.com/suikan4github/template_library/compare/v1.0.1...v1.1.0
+[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.2.0...develop
+[1.2.0]: https://github.com/suikan4github/template_library/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/suikan4github/template_library/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/suikan4github/template_library/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/suikan4github/template_library/compare/v0.0.0...v1.0.0
