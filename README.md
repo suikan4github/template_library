@@ -18,6 +18,23 @@ A CMake file template and sample C++ library which allows unit test by GoogleTes
     - linux-latest, Release
     - windows-latest, Debug
     - windows-latest, Release
+## Screenshots
+
+![](images/debug.png)
+
+Fig.1 Source code debugging on VS CODE.
+
+![](images/ctest.png)
+
+Fig.2 CTest on VS CODE.
+
+![](images/gcov.png)
+
+Fig. 3 Code coverage visualization by [Gcov Viewer extension](https://marketplace.visualstudio.com/items?itemName=JacquesLucke.gcov-viewer).
+
+![](images/gcovr.png)
+
+Fig. 4 Code coverage report by the [GitHub Actions](https://github.com/suikan4github/template_library/runs/4761910409?check_suite_focus=true). 
 
 ## Requirement
 ### Ubuntu
