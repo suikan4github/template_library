@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MM-DD
 ### Added
+- [Issue #15](https://github.com/suikan4github/template_library/issues/15) : Add screenshots
 ### Changed
 ### Fixed
 
