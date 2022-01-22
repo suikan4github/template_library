@@ -31,6 +31,9 @@
 *.out
 *.app
 
+# Doxygen
+*.bak
+
 # Directory
 build/
 html/
