@@ -6,7 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MM-DD
 ### Added
+generation.
+
 ### Changed
+### Fixed
+
+## [1.3.0] - 2022-01-22
+### Added
+- [Issue #15](https://github.com/suikan4github/template_library/issues/15) : Add screenshots
+- [Issue #16](https://github.com/suikan4github/template_library/issues/16) : Add doxygen auto ### Changed
 ### Fixed
 
 ## [1.2.0] - 2022-01-10
@@ -41,7 +49,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.2.0...develop
+[Unreleased]: https://github.com/suikan4github/template_library/compare/v1.3.0...develop
+[1.3.0]: https://github.com/suikan4github/template_library/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/suikan4github/template_library/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/suikan4github/template_library/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/suikan4github/template_library/compare/v1.0.0...v1.0.1

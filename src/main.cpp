@@ -1,8 +1,22 @@
+/**
+ * @file main.cpp
+ * @author your name (you@domain.com)
+ * @brief
+ * @version 0.1
+ * @date 2022-01-22
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 #include <iostream>
 #include <thread>
 #include "calc.hpp"
 
-// Calculate the square root of 1 to the given num.
+/**
+ * @brief  Calculate the square root of 1 to the given num.
+ *
+ * @param num From 1 to this number are calculated
+ */
 void CalcSqrt(int num)
 {
     Calc calc;
@@ -12,6 +26,11 @@ void CalcSqrt(int num)
         std::cout << "[CalcSqrt] The square root of " << i << " is " << calc.sqrt(i) << std::endl;
 }
 
+/**
+ * @brief Main function
+ *
+ * @return int always return 0
+ */
 int main()
 {
     std::cout << "[main] Thread start." << std::endl;
