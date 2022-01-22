@@ -133,12 +133,13 @@ winget install Microsoft.VisualStudio.2022.Community -e
 winget install Git.Git -e
 winget install Python.Python.3 -e
 winget install doxygen -e
+winget install graphviz -e
 ```
 - Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) and the [Gcov Viewer extension](https://marketplace.visualstudio.com/items?itemName=JacquesLucke.gcov-viewer) to the VS CODE.
 - Note 2: The above winget install the CMake installer only. Run the CMake once and complete the installation.
 - Note 3: The above wget install the VisualStudio launcher only. [Install the C++ workload](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-170) after winget installation.
 
-After the installation, set the PATH environment variable for CMake, Visual Studio C and Git. 
+After the installation, set the PATH environment variable for CMake, Visual Studio, Git and Graphviz. 
 
 ### WSL2
 
