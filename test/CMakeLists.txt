@@ -5,8 +5,10 @@
 include("${CMAKE_CURRENT_SOURCE_DIR}/../src/parameters.cmake")
 
 # GCOV settings
-set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} --coverage") 
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} --coverage") 
+if(NOT MSVC)
+    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} --coverage") 
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} --coverage") 
+endif()
 
 # List up all source files including main.cpp
 set(MAIN_FILE_PATTERN ".*/main.cpp$")
@@ -22,14 +24,16 @@ set(TEST_EXECUTABLE_NAME test_${MY_LIBRARY_NAME})
 # Add the executable for the testcase which is using googletest
 add_executable(${TEST_EXECUTABLE_NAME} ${TEST_SRC} ${LIB_SRC})
 
-    # Delete the gcov data file before linking. Otherwise, we will get many errors. 
-    add_custom_command(
-        TARGET ${TEST_EXECUTABLE_NAME} PRE_LINK
-        COMMAND find . -name "*.gcda" -delete
-        COMMENT "Deleting *.gcda files under ${CMAKE_BINARY_DIR}"
-        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-        VERBATIM)
-        
+    if(NOT MSVC)
+        # Delete the gcov data file before linking. Otherwise, we will get many errors. 
+        add_custom_command(
+            TARGET ${TEST_EXECUTABLE_NAME} PRE_LINK
+            COMMAND find . -name "*.gcda" -delete
+            COMMENT "Deleting *.gcda files under ${CMAKE_BINARY_DIR}"
+            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+            VERBATIM)
+    endif()
+
     # Add the library under test.
     target_link_libraries(${TEST_EXECUTABLE_NAME}  
                             "gtest_main"
