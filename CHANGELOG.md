@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 - [Issue #18](https://github.com/suikan4github/template_library/issues/18) :  Error regarding the GCOV during Link 
+- [Issue #19](https://github.com/suikan4github/template_library/issues/19) :   Make platform designation precise. 
 - [Issue #20](https://github.com/suikan4github/template_library/issues/20) :  Add graphviz to README.md
 
 ## [1.3.0] - 2022-01-22
